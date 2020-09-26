@@ -24,13 +24,6 @@
 #import <UIKit/UIKit.h>
 #import "CDVWKWebViewUIDelegate.h"
 
-//#ifdef __CORDOVA_4_0_0
-//    #import <Cordova/CDVUIWebViewDelegate.h>
-//#else
-//    #import <CDVWKWebViewUIDelegate.h>
-//    //#import <Cordova/CDVWebViewDelegate.h>
-//#endif
-
 @class CDVWKInAppBrowserViewController;
 
 @interface CDVThemeableBrowserOptions : NSObject {}
@@ -100,17 +93,6 @@
     NSInteger _userAgentLockToken;
     UIStatusBarStyle _statusBarStyle;
     CDVThemeableBrowserOptions *_browserOptions;
-
-//#ifdef __CORDOVA_4_0_0
-////    kCDVWebViewEngineWKUIDelegate* _webViewDelegate;
-////    kCDVWebViewEngineWKNavigationDelegate * _webNavigationDelegate;
-////    CDVUIWebViewDelegate* _webViewDelegate;
-////#else
-////    kCDVWebViewEngineWKUIDelegate* _webViewDelegate;
-////    kCDVWebViewEngineWKNavigationDelegate * _webNavigationDelegate;
-////    //CDVWebViewDelegate* _webViewDelegate;
-//#endif
-    
 }
 
 @property (nonatomic, strong) IBOutlet WKWebView* webView;
